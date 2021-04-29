@@ -1,0 +1,57 @@
+.session-authentication {
+    background-color: #fff;
+}
+
+.session-authentication .header-logged-out {
+    background-color: initial;
+    border-bottom: 0;
+}
+
+.session-authentication .header-logo {
+    color: #586069;
+}
+
+.auth-form {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.session-authentication .auth-form-header {
+    margin-bottom: 15px;
+    color: #24292e;
+    text-align: center;
+    text-shadow: none;
+    background-color: initial;
+    border: 0;
+}
+.auth-form-header {
+    padding: 10px 20px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 30%);
+    background-color: #829aa8;
+    border: 1px solid #768995;
+    border-radius: 6px 6px 0 0;
+}
+
+.session-authentication .auth-form-header h1 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -.5px;
+}
+.auth-form-header h1 {
+    font-size: 16px;
+}
+
+.session-authentication .auth-form-body {
+    border-top: 1px solid #eaecef;
+    border-radius: 6px;
+}
+.auth-form-body {
+    padding: 20px;
+    font-size: 14px;
+    background-color: #f6f8fa;
+    border: 1px solid #eaecef;
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
+}
