@@ -1,6 +1,6 @@
 # fmea_view
 
-https://apple0395.github.io/fmea_view/dist/index.html
+https://apple0395.github.io/fmea_view/
 
 ## Project setup
 ```
