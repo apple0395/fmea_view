@@ -18,7 +18,7 @@
             </div>
 
             <div class="auth-form-body mt-3">
-              <form action="/session" accept-charset="UTF-8" method="post">
+              <form @submit.prevent="SignIn">
                 <div class="form-group">
                   <label for="fab">Fab</label>
                   <select id="fab" v-model="user.fab" class="form-select">
@@ -37,6 +37,12 @@
                 <button type="submit" class="btn btn-success btn-block">Sign in</button>
               </form>
             </div>
+            <br />
+            <div class="footer container-lg p-responsive py-6 mt-6 f6" role="contentinfo">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" v-for="item in footer" :key="item">{{item}}</li>
+              </ul>
+            </div>
           </div>
         </main>
       </div>
@@ -51,12 +57,21 @@ export default {
     return {
       Fab: ['P1', 'P2', 'P3'],
       user: {
-        fab: '',
+        fab: 'P1',
         account: '',
         password: '',
       },
       footer: ['使用上有問題請找：xxx', '程式有問題請找：OOO'],
     };
+  },
+  methods: {
+    SignIn() {
+      // const apiUrl = this.Parse.ApiUrl();
+      // this.$router.push('scform'); //導頁
+      // router open window
+      const openPage = this.$router.resolve('scform');
+      window.open(openPage.href, '_blank');
+    },
   },
 };
 </script>
