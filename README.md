@@ -1,5 +1,7 @@
 # fmea_view
 
+https://apple0395.github.io/fmea_view/dist/index.html
+
 ## Project setup
 ```
 npm install
